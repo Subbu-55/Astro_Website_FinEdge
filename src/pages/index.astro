@@ -1,81 +1,200 @@
----
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
----
+<html>
+	<head>
+		<style>
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+  body {
+    font-family: Arial, sans-serif;
+  }  
+  html{ 
+	background-image: url("https://www.ledgerinsights.com/wp-content/uploads/2021/07/digital-currency-m-CBDC-cross-border.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+  h1,h2{ 
+	color:yellow;
+  }
+  p:hover{ 
+	color:red;
+  }
+ a:hover{ 
+	color:black;
+ }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  nav ul li {
+    margin-left: 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: yellow;
+	font-size:20px;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  #about {
+    padding: 100px 0;
+  }
+  .service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .service img {
+    width: 100px;
+    margin-right: 20px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  form button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  marquee{ 
+	color:red;
+  }
 </style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+			  <nav>
+				<div class="menu"></div>
+				<ul>
+				  <li><a href="#home" class="hi">Home</a></li>
+				  <li><a href="#about">About Us</a></li>
+				  <li><a href="#services" class="btn">Services</a></li>
+				  <li><a href="#contact" class="hello">Contact Us</a></li>
+				</ul>
+				
+			  </nav>
+			</header>
+			<section id="home">
+			  <div class="hero">
+				<h1>FINEDGE</h1>
+				<marquee>
+					<p> Seamlessly connect the world through innovative financial solutions.</p>
+				</marquee>
+			  </div>
+			</section>
+		
+			<section id="about">
+			  <div class="content">
+				<h2>About Us</h2>
+				<p>In today's interconnected world, financial transactions have become increasingly global. However, traditional payment systems often impose barriers and limitations when it comes to cross-border transfers. Recognizing this challenge, FinEdge emerges as a cutting-edge fintech startup with a clear mission: to transform cross-border payments and create a world where geographic boundaries no longer hinder seamless transactions. Through their innovative financial solutions, FinEdge aims to revolutionize the way individuals and businesses connect and conduct business on a global scale.
+                  <br>
+				  <br>
+					<h4>Embracing a Borderless Economy:</h4>
+					FinEdge firmly believes that geographic boundaries should not restrict individuals and businesses from participating in the global economy. They envision a world where financial transactions seamlessly transcend borders, empowering entrepreneurs, professionals, and businesses to effortlessly send and receive money across different countries and currencies. By eliminating the obstacles imposed by traditional payment systems, FinEdge opens doors to endless opportunities for international collaboration, trade, and economic growth.
+					<br>
+					<br>
+					<h4>Innovative Technological Solutions:</h4>
+					At the core of FinEdge's approach is the use of cutting-edge technology. Leveraging advanced financial systems, blockchain, and artificial intelligence, FinEdge provides secure, fast, and cost-effective solutions for international money transfers and business payments. Their platform harnesses the power of technology to streamline and optimize cross-border transactions, ensuring efficiency, transparency, and trust.
+					<br>
+					<br>
+					<h4>Real-Time Payment Tracking:</h4>
+					One of the distinguishing features of FinEdge is their real-time payment tracking capability. With this innovative solution, customers gain complete visibility into the status and progress of their transactions. Gone are the days of uncertainty and anxiety associated with cross-border payments. FinEdge keeps individuals and businesses informed at every step of the transaction, providing peace of mind and confidence throughout the process.
+					<br>
+					<br>
+					<h4>Exceptional Service and Support:</h4>
+					FinEdge takes pride in its team of experienced professionals who are dedicated to delivering exceptional service and support. They understand the complexities and challenges involved in international transactions, and their goal is to simplify the process for customers. Whether it's assisting with compliance requirements, providing personalized assistance, or resolving any issues that may arise, FinEdge's customer-centric approach ensures a smooth and hassle-free experience.
+					<br>
+					<br>
+					<h4>Empowering Global Connectivity:</h4>
+					With FinEdge, individuals and businesses can break free from the constraints of traditional payment systems and expand their reach in the global market. FinEdge's user-friendly platform empowers users to manage international payments efficiently, access competitive exchange rates, and leverage financial tools tailored to their unique needs. By embracing FinEdge's solutions, customers can unlock new opportunities, foster international collaborations, and tap into previously inaccessible markets.</p>
+			  </div>
+			</section>
+		
+			<section id="services">
+			  <div class="content">
+				<h2>Our Services</h2>
+				<div class="service">
+				  <img src="money-transfer.jpg" alt="Money Transfer" />
+				  <h3>Individual Money Transfers:</h3>
+				  <br>
+				  <br>
+				  <p>Transfer money across borders with ease and convenience.</p>
+				</div>
+				<div class="service">
+				  <img src="business-payments.jpeg" alt="Business Payments" />
+				  <h3>Business Payments:</h3>
+				  <br>
+				  <p>Efficiently manage international payments for your business.</p>
+				</div>
+				<div class="service">
+				  <img src="payment-tracking.png" alt="Payment tracking" width="50px" height="50px">
+				  <h3>Real-Time Payment Tracking:</h3>
+				 
+				  <p>Track your payments in real-time and stay informed every step of the way.</p>
+				</div>
+			  </div>
+			</section>
+			<section id="contact">
+			  <div class="content">
+				<h2>Contact Us</h2>
+				<form id="contact-form">
+				  <input type="text" placeholder="Name" required />
+				  <input type="email" placeholder="Email" required />
+				  <textarea placeholder="Message" required></textarea>
+				  <button type="submit">Submit</button>
+				</form>
+			  </div>
+			</section>
+		  </div>
+		  <script>
+			document.addEventListener('DOMContentLoaded', function() {
+             const exploreBtn = document.querySelector('.btn');
+             exploreBtn.addEventListener('click', function() {
+              alert('Thank you for exploring our services!');
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+        const exploreBtn = document.querySelector('.hi');
+        exploreBtn.addEventListener('click', function() {
+        alert('Thank you for choosing FinEdge!');
+       });
+    });
+     document.addEventListener('DOMContentLoaded', function() {
+     const exploreBtn = document.querySelector('.hello');
+     exploreBtn.addEventListener('click', function() {
+     alert('Thank you for Connecting with us!!');
+    });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contact-form');
+      contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for submitting the form!');
+        contactForm.reset();
+      });
+    });
+  </script>
+</body>
+</html>
